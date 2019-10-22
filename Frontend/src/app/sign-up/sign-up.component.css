@@ -1,0 +1,65 @@
+.rectangle {
+    box-sizing: border-box;	
+    /* height: 851px;	 */
+    height: auto;
+    width: 442px;	
+    border: 1px solid rgba(225,228,231,0.5);	
+    background-color: #FFFFFF;
+}
+.content {
+    height: 570px;
+    width: 619px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(225,228,231,0.5);
+    margin:166px 110px 166px 400px;
+}
+
+.Login{
+display: flex;
+flex-direction: row;
+height: 100%;
+background-color: #EDF1F5;
+}
+.Login_Image{
+margin:198.5px 73.5px 0px 74.5px;
+}
+.Application_Title{
+height: 50px;	
+width: 200px;	
+color: #2D2A2A;	
+font-family: Lato;
+text-align: center;
+font-size: 27px;	
+font-weight: 600;	
+line-height: 50px;
+margin: 10px 143px 285px 144px;
+}
+
+.Title{
+margin-top: 3.7rem;
+margin-left: 1rem;
+color: #1732D2;
+font-size: 2rem;
+font-weight: bold;
+}
+.sign-in-to-your-BL{
+color: #2D2A2A;	
+font-family: Lato;
+margin-top: 1rem;	
+font-size: 30px;	
+font-weight: 600;	
+line-height: 50px;
+letter-spacing: 1px;
+
+}
+.Flex-row{
+display: flex;
+flex-direction: row;
+}
+.Margin_Padding{
+padding: 3rem;
+}
+.description{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
