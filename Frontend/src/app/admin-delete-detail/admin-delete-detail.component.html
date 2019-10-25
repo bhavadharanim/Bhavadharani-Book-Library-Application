@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div >
+        <mat-card>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputId1">Enter the delete _Id</label>
+                        <input type="text" [(ngModel)]="details.id" [ngModelOptions]="{standalone: true}" class="form-control" id="exampleInputId1" aria-describedby="emailHelp"
+                            placeholder="Enter id">
+                        <small id="emailHelp" class="form-text text-muted">Once deleted the details. Cannot retriving the values</small>
+                    </div>
+                   
+                    <button class="add" type="submit" (click)="sendDetailToBackend()" class="btn btn-primary">Submit</button> 
+                    <button type="submit" class="margin_left" routerLink="/dashboard" class="btn btn-primary">Go to dashboard</button> 
+                </form>
+        </mat-card>
+</div>

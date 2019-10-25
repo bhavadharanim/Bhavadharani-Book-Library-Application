@@ -1,0 +1,121 @@
+.Header{
+    display: flex;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    z-index:999;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    flex-direction: row;
+    height: 6rem;
+    background-color: blue;
+    box-shadow: 1px 5px gainsboro;
+    /* margin-left: 3rem; */
+}
+.BL{
+    margin-left: 3rem;
+}
+.BL_logo{
+    height: 5rem;
+    width: 5rem;
+}
+
+    .Book_Library_Title{
+        margin:1rem;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        color: white;
+        font-weight: bold;
+    }
+    .topis_titles{
+        color: white;
+        margin-top: 1.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    button {
+        outline: none;
+        border: none;
+        }
+
+        .has-search .form-control {
+            padding-left: 2.375rem;
+        }
+        
+        .has-search .form-control-feedback {
+            position: absolute;
+            z-index: 2;
+            display: block;
+            width: 2.375rem;
+            height: 2.375rem;
+            line-height: 2.375rem;
+            text-align: center;
+            pointer-events: none;
+            color: #aaa;
+        }
+        .top_margin{
+            margin-top: 1.5rem;
+            margin-left: 2rem;
+        }
+        input{
+            width: 40rem;
+            border-radius: 2rem;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .details{
+            margin-top: 2rem;
+            margin-left: 2rem;
+            height: 4rem;
+        }
+        .contact{
+            margin-left: 25rem;     
+        }
+        .color{
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        
+        .Body_Page{
+            margin-top: 10rem;
+            margin-left: 4rem;
+        }
+       
+        mat-card,.row{
+            width: 20rem;
+            height: 30rem;
+        }
+        .btn{
+            margin-bottom: 2rem;
+        }
+        .material-icons{
+            padding-left: 0rem;
+        }
+        .btn-success{
+            margin-left: 4rem;
+        }
+        .Product_display,.row{
+            display: flex;
+            flex-direction: row;
+        }
+        .container{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        mat-card-content{
+        width: 18rem;
+        height: 5.4rem;
+        overflow: hidden;
+        }
+        mat-card-subtitle{
+            height: 2rem;
+        }
+       .delete{
+           margin-left: 90rem;
+       }
+
