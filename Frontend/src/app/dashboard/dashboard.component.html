@@ -75,4 +75,30 @@
       </mat-menu>
     </div>
   </div>
+  <div class="Body_Page">
+    <button type="button" routerLink="/add" class="btn btn-primary">Add details</button><button type="button" class="button" routerLink="/delete" class="btn btn-primary delete">Delete details</button>
+    <div class="container" fxLayout fxLayout.xs="column"  fxLayoutGap="10px" fxLayoutGap.xs="0">
+      <div class="Product_display" *ngFor="let i of products">
+        
+            <mat-card>
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{i.title}}</mat-card-title>
+                <mat-card-subtitle>{{i.author}} </mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="../../assets/programming image.jpg" alt="Photo of a Shiba Inu">
+              <mat-card-content>
+                {{i.description}}
+              </mat-card-content>
+              <mat-card-actions>
+                <button type="button" class="btn btn-light"><i class="material-icons"
+                    style="color: red;">favorite</i></button>
+                <button type="button" class="btn btn-primary">Read Now</button>
+                <button type="button" class="btn btn-success">Buy Now</button>
+              </mat-card-actions>
+            </mat-card>
+    
+         
+      </div>
+    </div>
 </div>

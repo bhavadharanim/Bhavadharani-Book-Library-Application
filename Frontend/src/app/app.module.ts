@@ -9,22 +9,42 @@ import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatMenuModule} from '@angular/material/menu'; 
+import { FormsModule } from '@angular/forms';
+import { ServiceService } from './service.service';
+import {MatCardModule} from '@angular/material/card';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import {MatFormFieldModule} from '@angular/material/form-field'; 
+
+import {HttpClientModule} from '@angular/common/http';
+import { AdminAddDetailComponent } from './admin-add-detail/admin-add-detail.component';
+import { AdminDeleteDetailComponent } from './admin-delete-detail/admin-delete-detail.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignUpComponent,
-    DashboardComponent
+    DashboardComponent,
+    AdminAddDetailComponent,
+    AdminDeleteDetailComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatMenuModule
+    MatFormFieldModule,
+    MatMenuModule,
+    FormsModule,
+    HttpClientModule,
+    MatCardModule,
+    FlexLayoutModule
   ],
-  providers: [],
+  providers: [
+    ServiceService
+  ],
   bootstrap: [AppComponent],
   exports:[
     LoginComponent,

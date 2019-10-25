@@ -1,9 +1,14 @@
 .Header{
     display: flex;
+    overflow: hidden;
+    background-color: #333;
     position: fixed;
+    z-index:999;
+    top: 0;
+    bottom: 0;
+    width: 100%;
     flex-direction: row;
     height: 6rem;
-    width: 100%;
     background-color: blue;
     box-shadow: 1px 5px gainsboro;
     /* margin-left: 3rem; */
@@ -76,3 +81,41 @@
             font-weight: bold;
         }
         
+        .Body_Page{
+            margin-top: 10rem;
+            margin-left: 4rem;
+        }
+       
+        mat-card,.row{
+            width: 20rem;
+            height: 30rem;
+        }
+        .btn{
+            margin-bottom: 2rem;
+        }
+        .material-icons{
+            padding-left: 0rem;
+        }
+        .btn-success{
+            margin-left: 4rem;
+        }
+        .Product_display,.row{
+            display: flex;
+            flex-direction: row;
+        }
+        .container{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        mat-card-content{
+        width: 18rem;
+        height: 5.4rem;
+        overflow: hidden;
+        }
+        mat-card-subtitle{
+            height: 2rem;
+        }
+       .delete{
+           margin-left: 90rem;
+       }
+
