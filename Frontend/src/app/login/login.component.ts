@@ -31,7 +31,12 @@ export class LoginComponent implements OnInit {
    this.employeeService.SignIn(this.Login.Email,this.Login.Password)
    .subscribe(data=>{
      console.log("working"+data);
-     this.route.navigateByUrl("dashboard");
+     if(this.Login.Email=="bhava@gmail.com"&&this.Login.Password=="bhava")
+     {
+       this.route.navigateByUrl("dashboard");
+     }
+     else
+     this.route.navigateByUrl("userpanel");
    },
    err=>{
      console.log("Error"+err);

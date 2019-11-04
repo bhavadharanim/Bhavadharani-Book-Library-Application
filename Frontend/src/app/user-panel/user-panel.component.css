@@ -42,9 +42,6 @@
         .has-search .form-control {
             padding-left: 2.375rem;
         }
-        .placeholder{
-            padding-left: 2rem;
-        }
         
         .has-search .form-control-feedback {
             position: absolute;
@@ -83,30 +80,54 @@
             font-size: 1rem;
             font-weight: bold;
         }
-        input:focus{
-            outline: none;
+        
+        .Body_Page{
+            margin-top: 10rem;
+            margin-left: 4rem;
         }
+       
+        mat-card,.row{
+            width: 20rem;
+            height: 30rem;
+        }
+        .btn{
+            margin-bottom: 2rem;
+        }
+        .material-icons{
+            padding-left: 0rem;
+        }
+        .btn-success{
+            margin-left: 4rem;
+        }
+        .Product_display,.row{
+            display: flex;
+            flex-direction: row;
+        }
+        .container{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        mat-card-content{
+        width: 18rem;
+        height: 5.4rem;
+        overflow: hidden;
+        }
+        mat-card-subtitle{
+            height: 2rem;
+        }
+       .delete{
+           margin-left: 90rem;
+       }
+
         #filtersubmit {
-            position: relative;
-            z-index: 1;
-            left: -25px;
-            top: 1px;
-            color: #7B7B7B;
-            cursor:pointer;
-            width: 0;
-        }
-        #filter{
-            padding-left: 1rem;
-        }
-        #filtersubmit {
-            position: relative;
-            z-index: 1;
-            left: -25px;
-            top: 1px;
-            color: #7B7B7B;
-            cursor:pointer;
-            width: 0;
-        }
-        #filter{
-            padding-left: 1rem;
-        }
+        position: relative;
+        z-index: 1;
+        left: -25px;
+        top: 1px;
+        color: #7B7B7B;
+        cursor:pointer;
+        width: 0;
+    }
+    #filter{
+        padding-left: 1rem;
+    }
