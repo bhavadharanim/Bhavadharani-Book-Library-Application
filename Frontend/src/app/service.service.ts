@@ -12,6 +12,9 @@ export class ServiceService {
 
   public admin_url="http://localhost:3000";
 
+  public Item;
+  public val="";
+
   constructor(private http:HttpClient) { }
 
   
@@ -53,4 +56,24 @@ export class ServiceService {
     return this.http.delete<Details[]>(`${this.admin_url}/admin/${id}`);
 
   }
+  searchItem(item){
+    localStorage.setItem("Username",item);
+    console.log("get header to service.......",item);
+
+  }
+  sendItem(){
+    this.Item=localStorage.getItem("item");
+    console.log("send service to component......",localStorage.getItem("item"));
+    this.val=this.Item;
+   return this.val;
+  }
+
+  getSpecificValue(item):Observable<Details[]>{
+
+    console.log("service working ...",item);
+    return this.http.get<Details[]>(`${this.admin_url}/admin/${item}`);
+
+  }
+
+
 }

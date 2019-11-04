@@ -29,6 +29,29 @@ router.post('/',(req,res,next)=>{
     
     });
 
+router.get('/:title',(req,res,next)=>{
+    // const title=req.params.title;
+    User.find({title:req.params.title})
+    .exec()
+    .then(result=>{
+        if(result){
+        res.status(200).json({
+            output:result
+        })
+    }else{
+        res.status(404).json({
+            message:"Not Found"
+        })
+    }
+    })
+    .catch(err=>{
+        console.log(err);
+        res.status(500).json({
+            error:err
+        })
+    })
+})    
+
 router.get('/',(req,res,next)=>{
     const user=new User({
         _id:new mongoose.Types.ObjectId(),

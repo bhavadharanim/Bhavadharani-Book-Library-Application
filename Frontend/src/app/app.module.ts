@@ -19,6 +19,10 @@ import {HttpClientModule} from '@angular/common/http';
 import { AdminAddDetailComponent } from './admin-add-detail/admin-add-detail.component';
 import { AdminDeleteDetailComponent } from './admin-delete-detail/admin-delete-detail.component';
 import { HeaderComponent } from './header/header.component';
+import { UserPanelComponent } from './user-panel/user-panel.component';
+import { TakeOrdersComponent } from './take-orders/take-orders.component';
+import {MatSelectModule} from '@angular/material/select'; 
+
 
 @NgModule({
   declarations: [
@@ -28,7 +32,9 @@ import { HeaderComponent } from './header/header.component';
     DashboardComponent,
     AdminAddDetailComponent,
     AdminDeleteDetailComponent,
-    HeaderComponent
+    HeaderComponent,
+    UserPanelComponent,
+    TakeOrdersComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +46,8 @@ import { HeaderComponent } from './header/header.component';
     FormsModule,
     HttpClientModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatSelectModule
   ],
   providers: [
     ServiceService

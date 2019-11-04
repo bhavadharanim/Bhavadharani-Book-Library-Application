@@ -1,0 +1,71 @@
+<app-header></app-header>
+<mat-card>
+    <div class="addBox">
+    <h2>Add new address</h2>
+
+    <p>Full name:</p>
+    
+    <div class="input-group mb-3">
+        <input [(ngModel)]="name" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <p>Phone number:</p>
+    
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <p>Pincode:</p>
+    
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <p>Address:</p>
+    
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <p>State:</p>
+    
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <div id="verify">
+
+    </div>
+
+    <button type="button" (click)="verify()" class="btn btn-primary">submit</button>
+
+    <div class="buying_item">
+        <div>
+                <p>Qty:</p>
+                <select [(ngModel)]="selectedLevel" class="browser-default custom-select">
+                        <option *ngFor="let item of data" [ngValue]="item">{{item}}</option>  
+                </select>
+
+
+        </div>
+        <div>
+            <div>
+          {{name}}
+          </div>
+          <div>
+          Total payment:{{selectedLevel*450}}
+          </div>
+          <div>
+                <button type="button" (click)="conformation()" class="btn btn-primary">Proceed payment</button>
+          </div>
+
+        </div>
+    </div>
+    
+
+
+
+</div>
+
+</mat-card>
+
+
+<div id="positions" >
+
+</div>

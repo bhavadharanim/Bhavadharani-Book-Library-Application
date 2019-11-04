@@ -1,0 +1,32 @@
+mat-card{
+    margin-top: 10rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-bottom: 10rem;
+}
+::ng-deep .mat-form-field-underline {
+    display: none;
+  }
+  .custom-select{
+      width: unset;
+  }
+  .buying_item{
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  .addBox{
+      padding-left: 4rem;
+      padding-right: 4rem;
+  }
+  .positions,#positions{
+      position: fixed;
+      top: 40%;
+      left: 13%;
+      height: 20rem;
+  }
+  .mb-0{
+      text-align: center;
+      margin-top: 4rem;
+  }
